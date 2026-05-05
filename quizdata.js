@@ -571,7 +571,7 @@ window.QUIZ_DATA = [
       "Å gi opp for tidlig"
     ],
     riktig: [1],
-    forklaring: "Sunken cost: man fortsetter en handling fordi man har investert i den, fremfor å vurdere om det fortsatt gir effekt. Motfall: vurder effekt, ikke prestisje/historikk."
+    forklaring: "Sunken cost: man fortsetter en handling fordi man har investert i den, fremfor å vurdere om det fortsatt gir effekt. Mottiltak: vurder effekt, ikke prestisje/historikk."
   },
   {
     id: "p8",
@@ -701,7 +701,7 @@ window.QUIZ_DATA = [
       "Å unngå å ta beslutning"
     ],
     riktig: [1],
-    forklaring: "Overkonfidens = for stor tro på egen vurdering. Motfall: kollegasjekk, eksplisitt verifisering, søke andre perspektiver."
+    forklaring: "Overkonfidens = for stor tro på egen vurdering. Mottiltak: kollegasjekk, eksplisitt verifisering, søke andre perspektiver."
   },
   {
     id: "p18",
@@ -783,4 +783,208 @@ window.QUIZ_DATA = [
     riktig: [1],
     forklaring: "Avtalen forenkler personell, materiell, ledelse, kostnader og praktiske grensehindre ved gjensidig bistand mellom landene."
   },
+
+  // ============ VARIERTE OPPGAVER / KRISE / ELS ============
+  {
+    "id": "ny1",
+    "kategori": "oppgaver",
+    "sporsmal": "Hvilke tre nivåer inngår i situasjonsbevissthet?",
+    "valg": [
+      "Oppfatte, forstå, forutse/projisere",
+      "Varsle, loggføre, evaluere",
+      "Plan, operasjon, logistikk",
+      "Lytte, betrygge, forklare"
+    ],
+    "riktig": [
+      0
+    ],
+    "forklaring": "Endsley-modellen: oppfatte, forstå og forutse/projisere. Deretter kommer beslutning og handling."
+  },
+  {
+    "id": "ny2",
+    "kategori": "oppgaver",
+    "sporsmal": "Hva kjennetegner intuitiv beslutningstaking?",
+    "valg": [
+      "Rask og erfaringsbasert",
+      "Bygger på mønstergjenkjenning",
+      "Krever alltid full analyse av alle alternativer",
+      "Kan være sårbar for bias"
+    ],
+    "riktig": [
+      0,
+      1,
+      3
+    ],
+    "forklaring": "Intuitiv beslutningstaking er rask og erfaring-/mønsterbasert, men kan påvirkes av beslutningsfeller."
+  },
+  {
+    "id": "ny3",
+    "kategori": "oppgaver",
+    "sporsmal": "Hva er bekreftelsesfellen?",
+    "valg": [
+      "Å lete etter informasjon som bekrefter første antakelse",
+      "Å overse informasjon som taler imot hypotesen",
+      "Å alltid vente på full informasjon",
+      "Å bruke riktig prosedyre"
+    ],
+    "riktig": [
+      0,
+      1
+    ],
+    "forklaring": "Bekreftelsesfellen gjør informasjonsinnhentingen skjev."
+  },
+  {
+    "id": "ny4",
+    "kategori": "oppgaver",
+    "sporsmal": "Hva kjennetegner et høyytelsesteam?",
+    "valg": [
+      "Felles mål",
+      "Tydelige roller",
+      "Psykologisk trygghet",
+      "Alle jobber isolert uten koordinering"
+    ],
+    "riktig": [
+      0,
+      1,
+      2
+    ],
+    "forklaring": "Høyytelsesteam kjennetegnes av mål, roller, tillit, kommunikasjon, koordinering og felles situasjonsforståelse."
+  },
+  {
+    "id": "ny5",
+    "kategori": "krise",
+    "sporsmal": "Hvilke kan være kognitive reaksjoner hos mennesker i krise?",
+    "valg": [
+      "Tunnelsyn",
+      "Forvirring",
+      "Svekket konsentrasjon",
+      "Bedre arbeidshukommelse enn normalt"
+    ],
+    "riktig": [
+      0,
+      1,
+      2
+    ],
+    "forklaring": "Krise kan redusere oppmerksomhet, konsentrasjon, hukommelse og informasjonsbearbeiding."
+  },
+  {
+    "id": "ny6",
+    "kategori": "krise",
+    "sporsmal": "Hva ønsker operatøren å oppnå ved å forklare?",
+    "valg": [
+      "Forutsigbarhet",
+      "Kontroll og mestring",
+      "Økt usikkerhet",
+      "At innringer forstår hva som skjer og hva han/hun skal gjøre"
+    ],
+    "riktig": [
+      0,
+      1,
+      3
+    ],
+    "forklaring": "Forklaring skal redusere usikkerhet og gi retning/mestring."
+  },
+  {
+    "id": "ny7",
+    "kategori": "krise",
+    "sporsmal": "Hva betyr det å parafrasere?",
+    "valg": [
+      "Gjenta med egne ord for å sjekke forståelse",
+      "Overta samtalen og avbryte innringer",
+      "Vise at man lytter",
+      "Korrigere misforståelser"
+    ],
+    "riktig": [
+      0,
+      2,
+      3
+    ],
+    "forklaring": "Parafrasering er et aktivt lyttegrep."
+  },
+  {
+    "id": "ny8",
+    "kategori": "ledelse",
+    "sporsmal": "Hvilke funksjoner bygger ELS på?",
+    "valg": [
+      "Innsatsleder, Operasjon, Plan og Logistikk",
+      "Administrasjon/økonomi, Informasjon, HMS-koordinator og Liaison",
+      "Kun politi, brann og helse",
+      "Kun 110-sentralen"
+    ],
+    "riktig": [
+      0,
+      1
+    ],
+    "forklaring": "ELS-funksjonene er Innsatsleder, Operasjon, Plan, Logistikk, Adm/økonomi, Informasjon, HMS og Liaison."
+  },
+  {
+    "id": "ny9",
+    "kategori": "psyk",
+    "sporsmal": "Hva kan være forankringsfeller?",
+    "valg": [
+      "Første melding",
+      "Første hypotese om hendelsestype",
+      "Første stedsforståelse/adresse",
+      "Bevisst revurdering av ny informasjon"
+    ],
+    "riktig": [
+      0,
+      1,
+      2
+    ],
+    "forklaring": "Forankring betyr at første informasjon får uforholdsmessig stor vekt."
+  },
+  {
+    "id": "ny10",
+    "kategori": "psyk",
+    "sporsmal": "Hvilke fire aspekter inngår i emosjonell intelligens?",
+    "valg": [
+      "Oppfatte emosjoner",
+      "Anvende emosjoner",
+      "Forstå emosjoner",
+      "Regulere emosjoner"
+    ],
+    "riktig": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "forklaring": "Emosjonell intelligens handler om å oppfatte, anvende, forstå og regulere emosjoner."
+  },
+  {
+    "id": "ny11",
+    "kategori": "psyk",
+    "sporsmal": "Hvilke er relevante typer stress i pensum/undervisning?",
+    "valg": [
+      "Akutt og kronisk stress",
+      "Sekundærtraumatisk stress",
+      "Moralsk stress og identifikasjonsstress",
+      "Beslutningstretthet og utbrenthet"
+    ],
+    "riktig": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "forklaring": "Alle alternativene er relevante begreper for 110-operatørens belastning og mestring."
+  },
+  {
+    "id": "ny12",
+    "kategori": "krise",
+    "sporsmal": "Hva kan kjennetegne kriser?",
+    "valg": [
+      "Uventet/akutt situasjon",
+      "Tidspress og usikkerhet",
+      "Tap av kontroll og sterke emosjoner",
+      "Alltid full informasjon"
+    ],
+    "riktig": [
+      0,
+      1,
+      2
+    ],
+    "forklaring": "Kriser preges ofte av akutt trussel, tidspress, usikkerhet, sterke emosjoner og informasjonsmangel."
+  }
 ];
