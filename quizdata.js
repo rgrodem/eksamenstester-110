@@ -123,8 +123,8 @@ window.QUIZ_DATA = [
   },
   {
     id: "sb13",
-    kategori: "samband",
-    sporsmal: "Hva betyr X foran et farenummer? (NB: spørsmål blandes med samband i eksamen — dette er fareskilt)",
+    kategori: "farlig",
+    sporsmal: "Hva betyr X foran et farenummer på oransje fareskilt?",
     valg: [
       "Eksplosjonsfare",
       "Reagerer farlig med vann",
@@ -140,7 +140,7 @@ window.QUIZ_DATA = [
     sporsmal: "Hva er korrekt navn på arbeidstalegruppen for skogbrannhelikopter?",
     valg: ["BRANN-HELI", "BRANN HELI", "HELI BRANN", "SKOGBRANN-HELI"],
     riktig: [1],
-    forklaring: "Korrekt navn er BRANN HELI (to ord, ingen bindestrek). Eies av DSB."
+    forklaring: "Korrekt navn i Sambandsreglement 2026 er BRANN HELI (to ord, ingen bindestrek). Eies av DSB. Merk: eldre dokumenter kan bruke skrivemåten BRANN-HELI."
   },
   {
     id: "sb15",
@@ -907,7 +907,7 @@ window.QUIZ_DATA = [
     "sporsmal": "Hvilke funksjoner bygger ELS på?",
     "valg": [
       "Innsatsleder, Operasjon, Plan og Logistikk",
-      "Administrasjon/økonomi, Informasjon, HMS-koordinator og Liaison",
+      "Administrasjon/økonomi, Informasjon, Sikkerhetskoordinator og Liaison",
       "Kun politi, brann og helse",
       "Kun 110-sentralen"
     ],
@@ -915,7 +915,7 @@ window.QUIZ_DATA = [
       0,
       1
     ],
-    "forklaring": "ELS-funksjonene er Innsatsleder, Operasjon, Plan, Logistikk, Adm/økonomi, Informasjon, HMS og Liaison."
+    "forklaring": "ELS-funksjonene (DSB-veileder): hovedfunksjoner — Innsatsleder, Planlegging og miljø, Operasjon, Logistikk. Støttefunksjoner — Økonomi/administrasjon, Juridisk, Informasjon, IKT, Sikkerhetskoordinator, Liaison."
   },
   {
     "id": "ny9",
