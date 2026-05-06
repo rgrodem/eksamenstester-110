@@ -21,18 +21,30 @@
     overflow: hidden;
   }
 
-  .screen-cover {
+  .screen-backdrop,
+  .screen-image {
     position: fixed;
     inset: 0;
     display: block;
     width: 100vw;
     height: 100vh;
+  }
+
+  .screen-backdrop {
     object-fit: cover;
+    object-position: center center;
+    filter: blur(18px) brightness(0.42);
+    transform: scale(1.05);
+  }
+
+  .screen-image {
+    object-fit: contain;
     object-position: center center;
   }
 
   @supports (height: 100dvh) {
-    .screen-cover {
+    .screen-backdrop,
+    .screen-image {
       height: 100dvh;
     }
   }
@@ -40,7 +52,13 @@
 </head>
 <body>
   <img
-    class="screen-cover"
+    class="screen-backdrop"
+    src="assets/ikke-trykk-her.png"
+    alt=""
+    aria-hidden="true"
+  />
+  <img
+    class="screen-image"
     src="assets/ikke-trykk-her.png"
     alt="Nå har du trykka på en link du ikke skulle ha trykka på"
   />
