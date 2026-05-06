@@ -12,55 +12,62 @@
   html,
   body {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     margin: 0;
     background: #000;
   }
 
   body {
+    min-height: 100vh;
     overflow: hidden;
   }
 
-  .screen-backdrop,
-  .screen-image {
+  .screen-backdrop {
+    position: fixed;
+    inset: -28px;
+    background: url("assets/ikke-trykk-her.png") center / cover no-repeat;
+    filter: blur(18px) brightness(0.42);
+  }
+
+  .stage {
     position: fixed;
     inset: 0;
-    display: block;
+    z-index: 1;
+    display: grid;
+    place-items: center;
     width: 100vw;
     height: 100vh;
-  }
-
-  .screen-backdrop {
-    object-fit: cover;
-    object-position: center center;
-    filter: blur(18px) brightness(0.42);
-    transform: scale(1.05);
+    padding: clamp(10px, 2.5vmin, 28px);
   }
 
   .screen-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    object-position: center center;
   }
 
   @supports (height: 100dvh) {
-    .screen-backdrop,
-    .screen-image {
+    body {
+      min-height: 100dvh;
+    }
+
+    .stage {
       height: 100dvh;
     }
   }
 </style>
 </head>
 <body>
-  <img
-    class="screen-backdrop"
-    src="assets/ikke-trykk-her.png"
-    alt=""
-    aria-hidden="true"
-  />
-  <img
-    class="screen-image"
-    src="assets/ikke-trykk-her.png"
-    alt="Nå har du trykka på en link du ikke skulle ha trykka på"
-  />
+  <div class="screen-backdrop" aria-hidden="true"></div>
+  <main class="stage">
+    <img
+      class="screen-image"
+      src="assets/ikke-trykk-her.png"
+      alt="Nå har du trykka på en link du ikke skulle ha trykka på"
+    />
+  </main>
 </body>
 </html>
