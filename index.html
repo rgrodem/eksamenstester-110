@@ -3,128 +3,46 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ny side kommer</title>
+<title>Ikke trykk her</title>
 <style>
-  :root {
-    color-scheme: light dark;
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #f6f7f9;
-    color: #15171a;
-  }
-
   * {
     box-sizing: border-box;
   }
 
+  html,
   body {
+    width: 100%;
+    min-height: 100%;
     margin: 0;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 24px;
-    background:
-      linear-gradient(135deg, rgba(24, 95, 120, 0.10), transparent 42%),
-      linear-gradient(315deg, rgba(199, 70, 48, 0.10), transparent 45%),
-      #f6f7f9;
+    background: #000;
   }
 
-  main {
-    width: min(680px, 100%);
-    padding: clamp(28px, 6vw, 52px);
-    border: 1px solid rgba(21, 23, 26, 0.12);
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.84);
-    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.10);
+  body {
+    overflow: hidden;
   }
 
-  h1 {
-    margin: 0 0 12px;
-    font-size: clamp(2rem, 5vw, 3.6rem);
-    line-height: 1;
-    letter-spacing: 0;
+  .screen-cover {
+    position: fixed;
+    inset: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
   }
 
-  p {
-    margin: 0;
-    max-width: 58ch;
-    color: #4a4f57;
-    font-size: 1.05rem;
-    line-height: 1.6;
-  }
-
-  a {
-    color: #0f6a8a;
-    font-weight: 700;
-    text-decoration-thickness: 0.08em;
-    text-underline-offset: 0.18em;
-  }
-
-  .actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 26px;
-  }
-
-  .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 0 18px;
-    border-radius: 6px;
-    background: #174e5f;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .note {
-    margin-top: 18px;
-    font-size: 0.94rem;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      background: #101418;
-      color: #f3f5f7;
-    }
-
-    body {
-      background:
-        linear-gradient(135deg, rgba(75, 170, 190, 0.16), transparent 42%),
-        linear-gradient(315deg, rgba(225, 92, 66, 0.14), transparent 45%),
-        #101418;
-    }
-
-    main {
-      border-color: rgba(255, 255, 255, 0.14);
-      background: rgba(20, 25, 30, 0.88);
-      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
-    }
-
-    p {
-      color: #c2c8cf;
-    }
-
-    a {
-      color: #7bc7df;
-    }
-
-    .button {
-      background: #7bc7df;
-      color: #102027;
+  @supports (height: 100dvh) {
+    .screen-cover {
+      height: 100dvh;
     }
   }
 </style>
 </head>
 <body>
-  <main>
-    <h1>Ny side kommer</h1>
-    <p>Denne adressen er gjort klar for nytt innhold. Eksamensopplegget er flyttet til den nye sikre lenken.</p>
-    <div class="actions">
-      <a class="button" href="safe-link/">Åpne eksamensopplegget</a>
-    </div>
-    <p class="note">Neste steg er å legge inn bildet som skal vises her.</p>
-  </main>
+  <img
+    class="screen-cover"
+    src="assets/ikke-trykk-her.png"
+    alt="Nå har du trykka på en link du ikke skulle ha trykka på"
+  />
 </body>
 </html>
